@@ -12,6 +12,7 @@ The package is available on NPM. To include the package in your project run:
 
 ```
 npm install --save ngx-govuk-components
+Add GovUKComponentsModule to your application module
 ```
 
 ## Usage
