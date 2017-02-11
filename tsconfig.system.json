@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "module": "system",
+    "target": "es5",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "sourceMap": false,
+    "moduleResolution": "node",
+    "outFile": "./dist/ng2-govuk-component-bundle.js"
+  },
+  "files": [
+    "src/ng2-govuk-components.ts",
+    "typings/index.d.ts"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "sourceMap": false,
+    "moduleResolution": "node",
+    "declaration": true,
+    "outDir": "dist",
+    "suppressImplicitAnyIndexErrors": true,
+    "removeComments": false,
+    "noImplicitAny": false
+  },
+  "exclude": [
+    "node_modules"
+  ],
+  "files": [
+    "src/ng2-govuk-components.ts",
+    "typings/index.d.ts"
+  ],
+  "filesGlob": [
+    "src/ng2-govuk-components.ts",
+    "typings/index.d.ts",
+    "src/**/*.ts",
+    "!src/**/*.spec.ts"
+  ]
+}
