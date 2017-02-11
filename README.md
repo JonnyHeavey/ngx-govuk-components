@@ -14,6 +14,10 @@ The package is available on NPM. To include the package in your project run:
 npm install --save ngx-govuk-components
 ```
 
+## Usage
+
+To be completed.
+
 ## Components
 
 - Phase Banner
