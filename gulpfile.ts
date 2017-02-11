@@ -12,7 +12,7 @@ gulp.task('clean', function () {
 
 // Sass compile (global styles only)
 gulp.task('sass', function () {
-  return gulp.src('./src/ng2-govuk-components.scss')
+  return gulp.src('./src/ngx-govuk-components.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(gulp.dest('dist/assets/styles'));
 });

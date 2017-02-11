@@ -1,4 +1,4 @@
-import { NgModule, ModuleWithProviders } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { BannerComponent } from './banner.component';
@@ -8,11 +8,4 @@ import { BannerComponent } from './banner.component';
   exports: [BannerComponent],
   declarations: [BannerComponent]
 })
-export class GovUKBannerModule {
-  static forRoot(): ModuleWithProviders {
-    return {
-      ngModule: GovUKBannerModule,
-      providers: []
-    };
-  }
-}
+export class BannerModule {}

@@ -2739,9 +2739,3 @@ button:focus,
   @media (min-width: 641px) {
     .form-control-1-8 {
       width: 12.5%; } }
-
-body {
-  /* Main font stack */
-  /* Disabled for licensing reasons, for details see -
-  https://designnotes.blog.gov.uk/2015/03/11/can-i-use-the-gov-uk-fonts/  */
-  /* Fallback font stack for use on other apps */ }
