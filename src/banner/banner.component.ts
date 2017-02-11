@@ -1,7 +1,7 @@
 import { Component, Input } from '@angular/core';
 
 @Component({
-  selector: 'govuk-banner',
+  selector: 'ngx-govuk-banner',
   template: `
   <div class="gv-c-phase-banner">
     <div class="gv-c-phase-banner__content">
