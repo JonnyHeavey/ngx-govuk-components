@@ -1,9 +1,11 @@
 import { NgModule } from '@angular/core';
 
 import { BannerModule } from './banner';
+import { ButtonModule } from './button';
 
 const modules = [
-  BannerModule
+  BannerModule,
+  ButtonModule
 ];
 
 @NgModule({
