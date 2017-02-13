@@ -9,8 +9,7 @@ import { Component, Input } from '@angular/core';
       <span class="gv-c-phase-banner__text"><ng-content></ng-content></span>
     </div>
   </div>
-  `,
-  styleUrls: ['./banner.component.scss']
+  `
 })
 export class BannerComponent {
 
