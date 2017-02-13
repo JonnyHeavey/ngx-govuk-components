@@ -9,26 +9,16 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var banner_1 = require('./banner');
-var button_1 = require('./button');
-var notice_1 = require('./notice');
-var prose_1 = require('./prose');
-var modules = [
-    banner_1.BannerModule,
-    button_1.ButtonModule,
-    notice_1.NoticeModule,
-    prose_1.ProseModule
-];
-var NgxGovUKComponentsModule = (function () {
-    function NgxGovUKComponentsModule() {
+var ProseComponent = (function () {
+    function ProseComponent() {
     }
-    NgxGovUKComponentsModule = __decorate([
-        core_1.NgModule({
-            imports: modules.slice(),
-            exports: modules.slice()
+    ProseComponent = __decorate([
+        core_1.Component({
+            selector: 'ngx-govuk-prose',
+            template: "\n  <div class=\"gv-s-prose\"><ng-content></ng-content></div>\n  "
         }), 
         __metadata('design:paramtypes', [])
-    ], NgxGovUKComponentsModule);
-    return NgxGovUKComponentsModule;
+    ], ProseComponent);
+    return ProseComponent;
 }());
-exports.NgxGovUKComponentsModule = NgxGovUKComponentsModule;
+exports.ProseComponent = ProseComponent;

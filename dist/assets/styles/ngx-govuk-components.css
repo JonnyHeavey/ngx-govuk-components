@@ -730,13 +730,13 @@ table {
     margin-left: 0.6em;
     padding-left: 0.9em;
     float: left;
-    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAALBAMAAACufOGlAAAAElBMVEWytbe0t7m+wcO+wcMAAAC+wcPAbOgBAAAABXRSTlPu26BgABhfd1AAAAApSURBVAgdYxB2cWFQNXFhcAp2YXBRNWFwcQpmcHFhhdBAPkgcJA9UBwCnGweczi1blAAAAABJRU5ErkJggg==");
+    background-image: url("/images/toolkit/separator.png");
     background-repeat: no-repeat;
     background-position: 0% 50%;
     list-style: none; }
     @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 20 / 10), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
       .gv-c-breadcrumbs__list-item {
-        background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAWCAMAAADD5o0oAAAAIVBMVEW+wcO+wcO+wcO+wcO+wcO+wcO+wcO+wcO+wcMAAAC+wcM+0VMmAAAACnRSTlPfj4CfzxBgMO8AaBhGbgAAAE1JREFUeNplz1EOgDAIA1CmTlbuf+CJrOkHfPESAsV8OVi2QrI3JMMvonRQmgSuiGcSuFMJKSF9kBo01hcMrq4IxqMMp6D9Bfb9bVePDc6+CJmAJ7aqAAAAAElFTkSuQmCC");
+        background-image: url("/images/toolkit/separator-2x.png");
         background-size: 6px 11px; } }
   .gv-c-breadcrumbs__link {
     color: #0b0c0c; }
