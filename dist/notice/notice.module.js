@@ -9,24 +9,19 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var banner_1 = require('./banner');
-var button_1 = require('./button');
-var notice_1 = require('./notice');
-var modules = [
-    banner_1.BannerModule,
-    button_1.ButtonModule,
-    notice_1.NoticeModule
-];
-var NgxGovUKComponentsModule = (function () {
-    function NgxGovUKComponentsModule() {
+var common_1 = require('@angular/common');
+var notice_component_1 = require('./notice.component');
+var NoticeModule = (function () {
+    function NoticeModule() {
     }
-    NgxGovUKComponentsModule = __decorate([
+    NoticeModule = __decorate([
         core_1.NgModule({
-            imports: modules.slice(),
-            exports: modules.slice()
+            imports: [common_1.CommonModule],
+            exports: [notice_component_1.NoticeComponent],
+            declarations: [notice_component_1.NoticeComponent]
         }), 
         __metadata('design:paramtypes', [])
-    ], NgxGovUKComponentsModule);
-    return NgxGovUKComponentsModule;
+    ], NoticeModule);
+    return NoticeModule;
 }());
-exports.NgxGovUKComponentsModule = NgxGovUKComponentsModule;
+exports.NoticeModule = NoticeModule;

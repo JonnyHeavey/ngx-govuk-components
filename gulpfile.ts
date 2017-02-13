@@ -20,6 +20,7 @@ gulp.task('sass', function () {
     .pipe(gulp.dest('dist/assets/styles'));
 });
 
+// Copy image assets into dist
 gulp.task('images', function () {
   return gulp.src('./node_modules/govuk_frontend_alpha/assets/images/**/*.png')
     .pipe(gulp.dest('dist/assets/images'));

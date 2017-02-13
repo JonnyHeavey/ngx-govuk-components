@@ -9,24 +9,16 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var banner_1 = require('./banner');
-var button_1 = require('./button');
-var notice_1 = require('./notice');
-var modules = [
-    banner_1.BannerModule,
-    button_1.ButtonModule,
-    notice_1.NoticeModule
-];
-var NgxGovUKComponentsModule = (function () {
-    function NgxGovUKComponentsModule() {
+var NoticeComponent = (function () {
+    function NoticeComponent() {
     }
-    NgxGovUKComponentsModule = __decorate([
-        core_1.NgModule({
-            imports: modules.slice(),
-            exports: modules.slice()
+    NoticeComponent = __decorate([
+        core_1.Component({
+            selector: 'ngx-govuk-notice',
+            template: "\n<div class=\"gv-c-notice\">\n    <i class=\"gv-c-notice__icon gv-c-notice__icon--important\"><span class=\"gv-c-notice__icon-fallback-text\">Warning</span></i>\n    <strong class=\"gv-c-notice__text\"><ng-content></ng-content></strong>\n</div>\n  "
         }), 
         __metadata('design:paramtypes', [])
-    ], NgxGovUKComponentsModule);
-    return NgxGovUKComponentsModule;
+    ], NoticeComponent);
+    return NoticeComponent;
 }());
-exports.NgxGovUKComponentsModule = NgxGovUKComponentsModule;
+exports.NoticeComponent = NoticeComponent;
