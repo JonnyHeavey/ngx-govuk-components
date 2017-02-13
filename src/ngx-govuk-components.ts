@@ -3,11 +3,13 @@ import { NgModule } from '@angular/core';
 import { BannerModule } from './banner';
 import { ButtonModule } from './button';
 import { NoticeModule } from './notice';
+import { ProseModule } from './prose';
 
 const modules = [
   BannerModule,
   ButtonModule,
-  NoticeModule
+  NoticeModule,
+  ProseModule
 ];
 
 @NgModule({
