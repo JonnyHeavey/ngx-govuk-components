@@ -9,30 +9,16 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var back_link_1 = require('./back-link');
-var banner_1 = require('./banner');
-var button_1 = require('./button');
-var detail_1 = require('./detail');
-var notice_1 = require('./notice');
-var prose_1 = require('./prose');
-var modules = [
-    back_link_1.BackLinkModule,
-    banner_1.BannerModule,
-    button_1.ButtonModule,
-    detail_1.DetailModule,
-    notice_1.NoticeModule,
-    prose_1.ProseModule
-];
-var NgxGovUKComponentsModule = (function () {
-    function NgxGovUKComponentsModule() {
+var BackLinkComponent = (function () {
+    function BackLinkComponent() {
     }
-    NgxGovUKComponentsModule = __decorate([
-        core_1.NgModule({
-            imports: modules.slice(),
-            exports: modules.slice()
+    BackLinkComponent = __decorate([
+        core_1.Component({
+            selector: 'ngx-govuk-back-link',
+            template: "\n    <a class=\"gv-c-link-back\">\n      <ng-content></ng-content>\n    </a>\n  "
         }), 
         __metadata('design:paramtypes', [])
-    ], NgxGovUKComponentsModule);
-    return NgxGovUKComponentsModule;
+    ], BackLinkComponent);
+    return BackLinkComponent;
 }());
-exports.NgxGovUKComponentsModule = NgxGovUKComponentsModule;
+exports.BackLinkComponent = BackLinkComponent;
