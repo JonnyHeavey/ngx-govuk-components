@@ -14,18 +14,45 @@ The package is available on NPM. To include the package in your project run:
 
 ```
 npm install --save ngx-govuk-components
-Add GovUKComponentsModule to your application module
-Include dist/assets/styles/ngx-govuk-components.css in your application
+
 ```
 
 ## Example
 
-To be completed.
+Include `GovUKComponentsModule` in your application module:
+
+```
+import { NgxGovUKComponentsModule } from 'ngx-govuk-components';
+
+@NgModule({
+  imports: [
+    NgxGovUKComponentsModule
+  ],
+  ... // omitted for brevity
+})
+export class AppModule {}
+```
+
+Include `dist/assets/styles/ngx-govuk-components.css` in your application (either in HTML or app CSS):
+
+In index.html:
+```
+<link href="node_modules/ngx-govuk-components/dist/assets/styles/ngx-govuk-components.css" rel="stylesheet">
+```
+
+In application.css:
+```
+@import '~ngx-govuk-components/dist/assets/styles/ngx-govuk-components.css';
+```
 
 ## Components
 
+- Back Link
+- Button
+- Detail / Summary
+- Notice
 - Phase Banner
-
+- Prose (content)
 
 ## Build
 
@@ -42,6 +69,10 @@ gulp
 - Demo app
 - Add component unit tests
 - Add more components
+
+## Contributing
+
+TBC
 
 ## License
 

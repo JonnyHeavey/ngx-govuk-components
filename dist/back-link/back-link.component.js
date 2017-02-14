@@ -15,7 +15,7 @@ var BackLinkComponent = (function () {
     BackLinkComponent = __decorate([
         core_1.Component({
             selector: 'ngx-govuk-back-link',
-            template: "\n    <a class=\"gv-c-link-back\">\n      <ng-content></ng-content>\n    </a>\n  "
+            template: "\n    <a href=\"#\" class=\"gv-c-link-back\">\n      <ng-content></ng-content>\n    </a>\n  "
         }), 
         __metadata('design:paramtypes', [])
     ], BackLinkComponent);

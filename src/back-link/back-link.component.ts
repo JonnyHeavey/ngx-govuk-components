@@ -3,7 +3,7 @@ import { Component, Input } from '@angular/core';
 @Component({
   selector: 'ngx-govuk-back-link',
   template: `
-    <a class="gv-c-link-back">
+    <a href="#" class="gv-c-link-back">
       <ng-content></ng-content>
     </a>
   `
