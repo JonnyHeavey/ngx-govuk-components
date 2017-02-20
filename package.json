@@ -3,6 +3,10 @@
   "version": "0.0.1",
   "description": "GOV.UK inspired components for Angular (2+)",
   "author": "Jonny Heavey <jonny.heavey@surevine.com>",
+  "repository" :{ 
+    "type" : "git", 
+    "url" : "https://github.com/JonnyHeavey/ngx-govuk-components"
+  },
   "license": "MIT",
   "main": "index.js",
   "scripts": {
