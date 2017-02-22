@@ -48,6 +48,7 @@ In application.css:
 ## Components
 
 - Back Link
+- Breadcrumb
 - Button
 - Detail / Summary
 - Notice
