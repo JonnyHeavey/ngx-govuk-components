@@ -9,32 +9,19 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var back_link_1 = require('./back-link');
-var banner_1 = require('./banner');
-var breadcrumb_1 = require('./breadcrumb');
-var button_1 = require('./button');
-var detail_1 = require('./detail');
-var notice_1 = require('./notice');
-var prose_1 = require('./prose');
-var modules = [
-    back_link_1.BackLinkModule,
-    banner_1.BannerModule,
-    breadcrumb_1.BreadcrumbModule,
-    button_1.ButtonModule,
-    detail_1.DetailModule,
-    notice_1.NoticeModule,
-    prose_1.ProseModule
-];
-var NgxGovUKComponentsModule = (function () {
-    function NgxGovUKComponentsModule() {
+var common_1 = require('@angular/common');
+var breadcrumb_component_1 = require('./breadcrumb.component');
+var BreadcrumbModule = (function () {
+    function BreadcrumbModule() {
     }
-    NgxGovUKComponentsModule = __decorate([
+    BreadcrumbModule = __decorate([
         core_1.NgModule({
-            imports: modules.slice(),
-            exports: modules.slice()
+            imports: [common_1.CommonModule],
+            exports: [breadcrumb_component_1.BreadcrumbComponent],
+            declarations: [breadcrumb_component_1.BreadcrumbComponent]
         }), 
         __metadata('design:paramtypes', [])
-    ], NgxGovUKComponentsModule);
-    return NgxGovUKComponentsModule;
+    ], BreadcrumbModule);
+    return BreadcrumbModule;
 }());
-exports.NgxGovUKComponentsModule = NgxGovUKComponentsModule;
+exports.BreadcrumbModule = BreadcrumbModule;
