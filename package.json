@@ -28,6 +28,7 @@
     "@angular/common": "^2.3.1",
     "@angular/compiler": "^2.3.1",
     "@angular/core": "^2.3.1",
+    "@angular/forms": "^2.3.1",
     "@types/core-js": "^0.9.34",
     "bulma": "^0.0.14",
     "core-js": "^2.4.0",

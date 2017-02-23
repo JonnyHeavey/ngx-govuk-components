@@ -7,6 +7,7 @@ import { ButtonModule } from './button';
 import { DetailModule } from './detail';
 import { NoticeModule } from './notice';
 import { ProseModule } from './prose';
+import { TextInputModule } from './text-input';
 
 const modules = [
   BackLinkModule,
@@ -15,7 +16,8 @@ const modules = [
   ButtonModule,
   DetailModule,
   NoticeModule,
-  ProseModule
+  ProseModule,
+  TextInputModule
 ];
 
 @NgModule({

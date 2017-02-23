@@ -11,7 +11,6 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var BreadcrumbComponent = (function () {
     function BreadcrumbComponent() {
-        //<a class="gv-c-breadcrumbs__list-link" href="/section/sub-section">Sub-section</a>
         // List of items to build breadcrumb with
         // Expects sequence of array items to match desired breadcrumb sequence
         this.listItems = [];
@@ -29,7 +28,7 @@ var BreadcrumbComponent = (function () {
     BreadcrumbComponent = __decorate([
         core_1.Component({
             selector: 'ngx-govuk-breadcrumb',
-            template: "\n    <div class=\"gv-c-breadcrumbs\">\n        <ol class=\"gv-c-breadcrumbs__list gv-u-cf\">\n          <li *ngFor=\"let item of listItems; let last = last\" class=\"gv-c-breadcrumbs__list-item\">\n            \n            <a *ngIf=\"!last || linkLastItem\" class=\"gv-c-breadcrumbs__list-link\" href=\"{{ item.link }}\">\n              {{ item.label }}\n            </a>\n\n            <span *ngIf=\"last && !linkLastItem\">{{ item.label }}</span>\n\n          </li>\n        </ol>\n    </div>\n  "
+            template: "\n    <div class=\"gv-c-breadcrumbs\">\n        <ol class=\"gv-c-breadcrumbs__list gv-u-cf\">\n          <li *ngFor=\"let item of listItems; let last = last\" class=\"gv-c-breadcrumbs__list-item\">\n            <a *ngIf=\"!last || linkLastItem\" class=\"gv-c-breadcrumbs__list-link\" href=\"{{ item.link }}\">\n              {{ item.label }}\n            </a>\n            <span *ngIf=\"last && !linkLastItem\">{{ item.label }}</span>\n          </li>\n        </ol>\n    </div>\n  "
         }), 
         __metadata('design:paramtypes', [])
     ], BreadcrumbComponent);
