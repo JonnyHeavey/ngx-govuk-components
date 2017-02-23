@@ -1,6 +1,8 @@
 import { ControlValueAccessor } from '@angular/forms';
-export declare const NGX_TEXT_INPUT_CONTROL_VALUE_ACCESSOR: any;
-export declare class TextInputComponent implements ControlValueAccessor {
+export declare const NGX_TEXT_AREA_CONTROL_VALUE_ACCESSOR: any;
+export declare class TextAreaComponent implements ControlValueAccessor {
+    cols: number;
+    rows: number;
     id: string;
     label: string;
     hint: string;

@@ -7,6 +7,7 @@ import { ButtonModule } from './button';
 import { DetailModule } from './detail';
 import { NoticeModule } from './notice';
 import { ProseModule } from './prose';
+import { TextAreaModule } from './text-area';
 import { TextInputModule } from './text-input';
 
 const modules = [
@@ -17,6 +18,7 @@ const modules = [
   DetailModule,
   NoticeModule,
   ProseModule,
+  TextAreaModule,
   TextInputModule
 ];
 

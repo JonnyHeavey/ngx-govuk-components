@@ -12,18 +12,18 @@ var core_1 = require('@angular/core');
 var forms_1 = require('@angular/forms');
 var noop = function () {
 };
-exports.NGX_TEXT_INPUT_CONTROL_VALUE_ACCESSOR = {
+exports.NGX_TEXT_AREA_CONTROL_VALUE_ACCESSOR = {
     provide: forms_1.NG_VALUE_ACCESSOR,
-    useExisting: core_1.forwardRef(function () { return TextInputComponent; }),
+    useExisting: core_1.forwardRef(function () { return TextAreaComponent; }),
     multi: true
 };
-var TextInputComponent = (function () {
-    function TextInputComponent() {
+var TextAreaComponent = (function () {
+    function TextAreaComponent() {
         this.innerValue = '';
         this.onTouchedCallback = noop;
         this.onChangeCallback = noop;
     }
-    Object.defineProperty(TextInputComponent.prototype, "value", {
+    Object.defineProperty(TextAreaComponent.prototype, "value", {
         get: function () {
             return this.innerValue;
         },
@@ -37,37 +37,45 @@ var TextInputComponent = (function () {
         configurable: true
     });
     ;
-    TextInputComponent.prototype.writeValue = function (value) {
+    TextAreaComponent.prototype.writeValue = function (value) {
         if (value !== this.innerValue) {
             this.innerValue = value;
         }
     };
-    TextInputComponent.prototype.registerOnChange = function (fn) {
+    TextAreaComponent.prototype.registerOnChange = function (fn) {
         this.onChangeCallback = fn;
     };
-    TextInputComponent.prototype.registerOnTouched = function (fn) {
+    TextAreaComponent.prototype.registerOnTouched = function (fn) {
         this.onTouchedCallback = fn;
     };
     __decorate([
         core_1.Input(), 
-        __metadata('design:type', String)
-    ], TextInputComponent.prototype, "id", void 0);
+        __metadata('design:type', Number)
+    ], TextAreaComponent.prototype, "cols", void 0);
+    __decorate([
+        core_1.Input(), 
+        __metadata('design:type', Number)
+    ], TextAreaComponent.prototype, "rows", void 0);
     __decorate([
         core_1.Input(), 
         __metadata('design:type', String)
-    ], TextInputComponent.prototype, "label", void 0);
+    ], TextAreaComponent.prototype, "id", void 0);
     __decorate([
         core_1.Input(), 
         __metadata('design:type', String)
-    ], TextInputComponent.prototype, "hint", void 0);
-    TextInputComponent = __decorate([
+    ], TextAreaComponent.prototype, "label", void 0);
+    __decorate([
+        core_1.Input(), 
+        __metadata('design:type', String)
+    ], TextAreaComponent.prototype, "hint", void 0);
+    TextAreaComponent = __decorate([
         core_1.Component({
-            selector: 'ngx-govuk-text-input',
-            template: "\n    <div class=\"gv-c-form-group \">\n        <label *ngIf=\"label\" class=\"gv-c-form-group__label\" for=\"{{ id }}\">\n          {{ label }}\n          <span *ngIf=\"hint\" class=\"gv-c-form-group__hint\">{{ hint }}</span>\n        </label>\n        <input class=\"gv-c-form-group__control\" id=\"{{ id }}\" [(ngModel)]=\"value\">\n    </div>\n  ",
-            providers: [exports.NGX_TEXT_INPUT_CONTROL_VALUE_ACCESSOR]
+            selector: 'ngx-govuk-text-area',
+            template: "\n    <div class=\"gv-c-form-group \">\n        <label *ngIf=\"label\" class=\"gv-c-form-group__label\" for=\"{{ id }}\">\n          {{ label }}\n          <span *ngIf=\"hint\" class=\"gv-c-form-group__hint\">{{ hint }}</span>\n        </label>\n        <textarea class=\"gv-c-form-group__control\" id=\"{{ id }}\" cols=\"{{ cols }}\" rows=\"{{ rows }}\" [(ngModel)]=\"value\">Content of text area</textarea>\n    </div>\n  ",
+            providers: [exports.NGX_TEXT_AREA_CONTROL_VALUE_ACCESSOR]
         }), 
         __metadata('design:paramtypes', [])
-    ], TextInputComponent);
-    return TextInputComponent;
+    ], TextAreaComponent);
+    return TextAreaComponent;
 }());
-exports.TextInputComponent = TextInputComponent;
+exports.TextAreaComponent = TextAreaComponent;

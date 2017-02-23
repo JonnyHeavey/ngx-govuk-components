@@ -16,6 +16,7 @@ var button_1 = require('./button');
 var detail_1 = require('./detail');
 var notice_1 = require('./notice');
 var prose_1 = require('./prose');
+var text_area_1 = require('./text-area');
 var text_input_1 = require('./text-input');
 var modules = [
     back_link_1.BackLinkModule,
@@ -25,6 +26,7 @@ var modules = [
     detail_1.DetailModule,
     notice_1.NoticeModule,
     prose_1.ProseModule,
+    text_area_1.TextAreaModule,
     text_input_1.TextInputModule
 ];
 var NgxGovUKComponentsModule = (function () {
